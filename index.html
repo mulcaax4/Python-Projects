@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THL.com</title>
+
+    <style>
+        body{
+            margin: 0;
+            height: 100%;
+            /*background-color: #A6D9F7;*/
+            background-image: url('cloudcity.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        #navbar{
+            background-color: #BF98A0;
+            display: block;
+            overflow: auto;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            border-bottom: 5px solid #312F2F;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            float: right;
+            /*border-left: 1px solid #312F2F ;*/
+
+        }
+        .navtext{
+            padding: 10px;
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            font-family: 'Tahoma';
+            font-size: 20px;
+            color: #312F2F;
+        }
+        .navtext:hover{
+            background-color: #312F2F;
+            color: #BCCCE0;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Tahoma';
+            font-size: 60px;
+            font-weight: bold;
+            margin: 0;
+            color: #312F2F;
+        }
+        #pagetitle{
+            padding: 0;
+            margin: 0;
+            padding-bottom: 50px;
+        }
+        #hourglass{
+            position: relative;
+            margin: auto;
+            height: 400px;
+        }
+        #topglass{
+            margin: auto;
+            width: 0;
+            height: 0;
+            border-left: 110px solid transparent;
+            border-right: 110px solid transparent;
+            border-top: 200px solid #312F2F;
+        }
+        #bottomglass{
+            margin: auto;
+            width: 0;
+            height: 0;
+            border-left: 110px solid transparent;
+            border-right: 110px solid transparent;
+            border-bottom: 200px solid #312F2F;
+        }
+        #search{
+            display: block;
+            width: 200px;
+            position: absolute;
+            left: 50%;
+            top: 47.5%;
+            transform: translateX(-50%);
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <ul>
+            <li>
+                <a class="navtext" id="profile" href="profile.html">Profile</a>
+            </li>
+            <li>
+                <a class="navtext" id="login" href="login.html">Login</a>
+            </li>
+            <li>
+                <a class="navtext" id="logout" href="">Logout</a>
+            </li>
+            <li>
+                <a class="navtext" id="signup" href="signup.html">Sign up</a>
+            </li>
+            <li>
+                <a class="navtext" href="library.html">Library</a>
+            </li>
+            <li>
+                <a class="navtext" href="admin.html">Write Book</a>
+            </li>
+            <li>
+                <a class="navtext" href="index.html">Home</a>
+            </li>
+        </ul>
+    </div>
+    <div id="pagetitle">
+        <h1>The Hourglass Library</h1>
+    </div>
+    <div id="hourglass">
+        <div id="topglass">
+        </div>
+        <div id="searchbar">
+            <input id="search" type="text">
+        </div>
+        <div id="bottomglass">
+        </div>
+    </div>
+    <script src="logout.js"></script>
+</body>
+</html>
